@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blur background</title>
+    <style>
+      .wrap_content {
+        position: relative;
+        width: 1000px;
+      }
+      .layer {
+        position: absolute;
+        width: inherit;
+        height: 100%;
+        backdrop-filter: blur(15px);
+      }
+      .blur__img {
+        display: block;
+        width: inherit;
+      }
+      .content__img {
+        width: 400px;
+        aspect-ratio: 1;
+        border-radius: 10px;
+        object-fit: cover;
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .text {
+        color: white;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 300px;
+        left: 35%;
+        z-index: 4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap_content">
+      <div class="text">Hello World!</div>
+      <img class="content__img" src="https://image.winudf.com/v2/image1/ZXUuYmx1ZW5ldHdlYi5iZ2ltYWdlX21pbmVjcmFmdF9zY3JlZW5fMV8xNjEwNDg3OTExXzA5OA/screen-1.jpg?fakeurl=1&type=.webp" alt="" draggable="false" />
+      <div class="layer"></div>
+      <img class="blur__img" src="https://wallpapershome.com/images/pages/pic_v/6518.jpg" alt="" draggable="false" />
+    </div>
+  </body>
+</html>
