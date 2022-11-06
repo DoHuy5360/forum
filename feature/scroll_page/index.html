@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* outline: 1px solid red; */
+      }
+      .wrap__all {
+        display: flex;
+        height: 100vh;
+        gap: 100px;
+      }
+      #column-1 {
+        width: 100px;
+        background-color: lightblue;
+      }
+      #column-2 {
+        width: 600px;
+        background-color: lightpink;
+      }
+      #column-3 {
+        width: 300px;
+        background-color: lightgreen;
+      }
+      .make__center{
+        width: 90%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+      }
+      .make__center::-webkit-scrollbar{
+        width: 0;
+        height: 0;
+      }
+      .card{
+        width: 100%;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+      }
+      .thumb{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap__all">
+      <div id="column-1" class="column">123</div>
+      <div id="column-2" class="column">
+        <div class="make__center">
+            <div class="card">
+                <img src="http://surl.li/dgukv" alt="" class="thumb">
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, earum! At ab quae deleniti quibusdam earum nam, quis eligendi quia suscipit, totam et atque enim molestiae cum sequi aliquid labore!</div>
+            </div>
+            <div class="card">
+                <img src="http://surl.li/dgukx" alt="" class="thumb">
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, earum! At ab quae deleniti quibusdam earum nam, quis eligendi quia suscipit, totam et atque enim molestiae cum sequi aliquid labore!</div>
+            </div>
+            <div class="card">
+                <img src="http://surl.li/dguky" alt="" class="thumb">
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, earum! At ab quae deleniti quibusdam earum nam, quis eligendi quia suscipit, totam et atque enim molestiae cum sequi aliquid labore!</div>
+            </div>
+            <div class="card">
+                <img src="http://surl.li/dgula" alt="" class="thumb">
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, earum! At ab quae deleniti quibusdam earum nam, quis eligendi quia suscipit, totam et atque enim molestiae cum sequi aliquid labore!</div>
+            </div>
+            <div class="card">
+                <img src="http://surl.li/dguld" alt="" class="thumb">
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, earum! At ab quae deleniti quibusdam earum nam, quis eligendi quia suscipit, totam et atque enim molestiae cum sequi aliquid labore!</div>
+            </div>
+            <div class="card">
+                <img src="http://surl.li/dgulf" alt="" class="thumb">
+                <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, earum! At ab quae deleniti quibusdam earum nam, quis eligendi quia suscipit, totam et atque enim molestiae cum sequi aliquid labore!</div>
+            </div>
+        </div>
+      </div>
+      <div id="column-3" class="column">456</div>
+    </div>
+  </body>
+</html>
